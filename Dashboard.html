@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>DASHBOARD</title>
+            <style>
+                *{
+                    margin: 0; 
+                    padding: 0;
+                    box-sizing: border-box;
+                    -webkit-font-smoothing: antialiased;
+                }
+
+                body{
+                    background-color:transparent;
+                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                    background-image: url('Images/emp2_1.jpg');
+                    background-repeat: no-repeat;
+                    background-size:cover;
+                }
+
+                h1{
+                    color:cornsilk;
+                    text-align: center;
+                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    margin-top: 30px;
+                }
+
+                .container{
+                    max-width: 700px;
+                    margin: auto;
+                    padding: 30px;
+                    background-color:transparent;
+                    border-radius: 40px;
+                    box-shadow: 1px 1px 50px rgba(0, 0, 1, 2);
+                }
+
+                label{
+                    display:inline-block;
+                    font-weight: bolder;
+                    margin-bottom: 10px;
+                    color:seashell;
+                }
+                table{
+                    width: 550px;
+                    margin:auto;
+                    font-size: 20px;
+                }
+
+                input[type="text"]{
+                    width: 300px;
+                    padding: 7px;
+                    margin-bottom: 10px;
+                    border-radius: 6px;
+                    
+                }
+
+                input[type="password"]{
+                    width: 300px;
+                    padding: 7px;
+                    margin-bottom: 10px;
+                    border-radius: 6px;
+                }
+
+                input[type="number"]{
+                    width: 300px;
+                    padding: 7px;
+                    margin-bottom: 10px;
+                    border-radius: 6px;
+                }
+
+                input[type="submit"]{
+                    text-align: center;
+                    display: block;
+                    margin: auto;
+                    background-color: burlywood;
+                    padding: 10px 50px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    font-weight: 800;
+                }
+
+                input[type="submit"]:hover{
+                    opacity: 0.75;
+                }
+
+
+                .cancel{
+                    text-align: center;
+                    display: block;
+                    margin: auto;
+                    background-color: burlywood;
+                    padding: 10px 50px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    font-weight: 800;
+                }
+
+                input[type="submit"]:hover{
+                    opacity: 0.75;
+                }
+
+                span.psw{
+                    float: right;
+                    padding-top: 16px;
+                    color: seashell;
+                }
+            </style>
+        </head>
+        <body>
+            <h1 style="text-align:center;">DASHBOARD</h1>
+            <div class="container">
+                <form action="Admin_login.html" method="post">
+                    <table>
+                        <tr>
+                        <th><input type="submit" id="Admin" value="Admin"></th>
+                        </tr>
+                    </table>
+                </form>
+
+                <form action="Emp_login.html" method="post">
+                    <table>
+                        <tr>
+                        <th><input type="submit" id="Emp" value="Employee"></th>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </body>
+    </html>

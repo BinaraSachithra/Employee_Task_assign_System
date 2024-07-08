@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Register</title>
+    <style>
+         *{
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+        body{
+            background-color:transparent;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-image: url('Images/task_1.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        h1{
+            color:cornsilk;
+            text-align: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top:30px ;
+        }
+
+        .container1{
+            max-width: 700px;
+            margin: auto;
+            margin-top: -100px;
+            padding: 20px;
+            background-color:transparent;
+            border-radius: 40px;
+            box-shadow: 1px 1px 50px rgba(0, 0, 1, 2);
+        }
+
+        label{
+            display:inline-block;
+            font-weight: bolder;
+            margin-bottom: 10px;
+            color:seashell;
+        }
+        table{
+            width: 550px;
+            margin: auto;
+            font-size: 20px;
+        }
+
+        input[type="text"]{
+            width: 300px;
+            padding: 7px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+
+        input[type="number"]{
+            width: 300px;
+            padding: 7px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+
+        input[type="date"]{
+            width: 300px;
+            padding: 7px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+
+        input[type="submit"]{
+            text-align: center;
+            display: block;
+            margin: auto;
+            background-color:burlywood;
+            padding: 10px 50px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        input[type="submit"]:hover{
+            opacity: 0.75;
+        }
+        
+        .navbar{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav{
+            flex: 1;
+            text-align: right;
+        }
+        nav ul{
+            display: inline-block;
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: #3e3131;
+        }
+        p{
+            color: #3e3131;
+        }
+        .header{
+            background: radial-gradient(#fff,#749be8);
+        }
+        .header .row{
+            margin-top: 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+            <div class="navbar">
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="Activity.php">Activity</a></li>
+                    <li><a href="Task.html">Task</a></li>
+                    <li><a href="">Report</a></li>
+                    <li><input type="submit" value="Logout" name="submit" id="logout"></li>
+                </ul>
+            </nav>
+            </div>
+    </div>
+
+    <h1>Task Register</h1><br><br>
+
+    <div class="container1">
+        <form method="post" action="regTask.php">
+            <table>
+                <tr>
+                <th><label for="tid">TID</label></th>
+                <td><input type="number" name="tid" id="tid"></td><br><br>
+                </tr>
+
+                <tr>
+                <th><label for="name">Task Name</label></th>
+                <td><input type="text" name="name" id="name"></td><br><br>
+                </tr>
+
+                <tr>
+                <th><label for="sdate">Start Date</label></th>
+                <td><input type="date" name="sdate" id="sdate"></td><br><br>
+                </tr>
+
+                <tr>
+                <th><label for="edate">End Date</label></th>
+                <td><input type="date" name="edate" id="edate"></td><br><br>
+                </tr>
+
+                <tr>
+                <th><label for="nature">Nature</label></th>
+                <td><input type="text" name="nature" id="nature"></td><br><br></th>
+                </tr>
+
+                <tr>
+                <th><input type="submit" value="Submit" name="submit"></th>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
